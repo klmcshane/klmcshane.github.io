@@ -1,6 +1,12 @@
 
-fruits = ["kiwi", "strawberry", "plum", "peach"]
+fruits = ["cardboard","kiwi", "strawberry", "plum", "peach"]
 
-for fruit in fruits:
-    if fruit == "plum":
-        print(fruit)
+if "apple" not in fruits[0]:
+    print("Yuck!")
+age = 5
+if age > 0 and age <= 2:
+    print("baby")
+elif age > 2 and age < 18:
+    print("child")
+else:
+    print("adult")
