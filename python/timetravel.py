@@ -7,5 +7,6 @@ def greetings(y):
             print ("Hello!")
         else:
             print("Hey there.")
+
 for y in year:
     greetings(y)
