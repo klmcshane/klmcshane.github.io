@@ -2,7 +2,10 @@ birth_dates = {"Harry Potter": 1980,
 "Draco Malfoy": 1980,
 "Albus Potter": 2009,
 "Scorpius Malfoy": 2008,
-"Albus Dumbledore": 1802}
+"Albus Dumbledore": 1802,
+"Rose Weasley": 2009,
+"Ron Weasley": 1980,
+"Minerva McGonagall": 1899}
 
 
 nineteen_count = 0
