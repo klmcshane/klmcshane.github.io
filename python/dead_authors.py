@@ -11,9 +11,6 @@ def deadguys(x, y):
 for author, year in author_death.items():
     deadguys(author, year)
 
-
-
-
 def greetings(x,y):
     if int(y)<=1450:
         print("Hwaet, " + x + "!")
