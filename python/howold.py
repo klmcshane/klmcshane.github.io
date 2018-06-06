@@ -19,6 +19,7 @@ for name, year in birth_dates.items():
         twenty_count += 1
     else:
         twentyone_count += 1
+    print(name + " was born in " + str(year))
 
 print("There are " + str(nineteen_count) + " 19th c births, "
     + str(twenty_count) + " 20th c births, "
