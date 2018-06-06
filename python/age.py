@@ -13,4 +13,4 @@ for year in years:
     age.append (2018 - year)
 
 for name in names:
-    print(name + " is " + str(age[0:8]) + " years old.")
+    print(name + " is " + str(age[0]) + " years old.")
