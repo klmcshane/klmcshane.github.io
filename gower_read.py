@@ -10,7 +10,6 @@ def open_file_and_get_text(filename):
 
 def clean_tokens(tokens):
     #given some tokens, lowercase them all
-    words = nltk.word_tokenize(text)
     clean_words =[]
     #make a loop to run all the things in words
     for word in tokens:
@@ -18,12 +17,20 @@ def clean_tokens(tokens):
         clean_words.append(word.lower())
     return clean_words
 
-our_file = "chaucer_ct.txt"
+def read_all(poem):
+    text = open_file_and_get_text(poem)
+    words = nltk.word_tokenize(text)
+    clean_words = clean_tokens(words)
+    word_counts = nltk.FreqDist(clean_words)
+    print(word_counts["endite"])
+    nltk.Text(clean_words).dispersion_plot(["make", "endite", "write"])
 
-text = open_file_and_get_text(our_file)
-words = nltk.word_tokenize(text)
-clean_words = clean_tokens(words)
+troilus = "corpus/chaucer_troilus.txt"
+canterbury = "corpus/chaucer_ct.txt"
+confessio = "corpus/gower.txt"
 
-word_counts = nltk.FreqDist(clean_words)
-print(word_counts["endite"])
-nltk.Text(clean_words).dispersion_plot(["make", "endite", "write"])
+read_all (troilus)
+read_all (canterbury)
+read_all (confessio)
+
+#filename = ["corpus/chaucer_ct.txt", "corpus/chaucer_troilus.txt"]
